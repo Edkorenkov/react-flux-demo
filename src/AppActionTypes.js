@@ -1,0 +1,4 @@
+export default {
+  LOAD_TODOS: "LOAD_TODOS",
+  RECIEVE_TODOS: "RECIEVE_TODOS"
+};
