@@ -1,6 +1,6 @@
 import React from "react";
 
-function TodoList(props) {
+function Activities(props) {
   return (
     <div className="row">
       <div className="col">
@@ -18,4 +18,4 @@ function TodoList(props) {
   );
 }
 
-export default TodoList;
+export default Activities;

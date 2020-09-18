@@ -1,15 +1,15 @@
 import { Container } from "flux/utils";
 import App from "./views/App";
-import TodoListStore from "./data/stores/TodoListStore";
-import TodoListActions from "./data/actions/TodoListActions";
+import ActivitiesStore from "./data/stores/ActivitiesStore";
+import ActivitiesActions from "./data/actions/ActivitiesActions";
 
 export default Container.createFunctional(
   App,
-  () => [TodoListStore],
+  () => [ActivitiesStore],
   () => ({
-    todoItem: {},
-    todoList: TodoListStore.getState(),
+    activity: {},
+    activities: ActivitiesStore.getState(),
 
-    onLoadTodos: TodoListActions.loadTodos
+    onLoadActivities: ActivitiesActions.loadActivities
   })
 );
