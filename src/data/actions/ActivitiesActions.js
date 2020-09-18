@@ -3,7 +3,7 @@ import AppActionTypes from "../../AppActionTypes";
 
 export default {
   loadActivities() {
-    AppDispatcher.dispatch({ type: AppActionTypes.LOAD });
+    AppDispatcher.dispatch({ type: AppActionTypes.ON_LOAD });
 
     setTimeout(() => {
       AppDispatcher.dispatch({
