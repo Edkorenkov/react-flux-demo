@@ -1,15 +1,15 @@
 import React from "react";
-import TodoList from "./TodoList";
+import Activities from "./Activities";
 
 function App(props) {
   return (
     <div className="container-md">
       <h3 className="text-center">Activities react-flux example</h3>
-      {props.ac.isLoad && <div>Loading...</div>}
-      {!props.todoList.isLoad && <TodoList {...props} />}
+      {!props.app.isLoad && <div>Loading...</div>}
+      {props.app.isLoad && <Activities {...props} />}
       <button
         className="btn btn-secondary btn-block mt-2"
-        onClick={(e) => props.onLoadTodos(e)}
+        onClick={(e) => props.onLoadActivities(e)}
       >
         Load
       </button>

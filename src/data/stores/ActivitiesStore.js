@@ -14,7 +14,7 @@ class ActivitiesStore extends ReduceStore {
   reduce(state, action) {
     switch (action.type) {
       case AppActionTypes.RECIEVE_ACTIVITIES:
-        return [...state.activities, ...action.activities];
+        return [...state, ...action.activities];
       default:
         return state;
     }

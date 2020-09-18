@@ -1,4 +1,4 @@
 export default {
-  OLOAD: "LOAD",
+  ON_LOAD: "ON_LOAD",
   RECIEVE_ACTIVITIES: "RECIEVE_ACTIVITIES"
 };

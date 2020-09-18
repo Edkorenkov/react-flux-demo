@@ -15,10 +15,10 @@ class AppStore extends ReduceStore {
 
   reduce(state, action) {
     switch (action.type) {
-      case AppActionTypes.LOAD:
-        return {
-          isLoad: true
-        };
+      case AppActionTypes.ON_LOAD:
+        return { isLoad: false };
+      case AppActionTypes.RECIEVE_ACTIVITIES:
+        return { isLoad: true };
       default:
         return state;
     }
