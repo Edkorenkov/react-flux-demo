@@ -1,2 +1,2 @@
-# react-flux-todo-demo
+# react-flux-demo
 Created with CodeSandbox
