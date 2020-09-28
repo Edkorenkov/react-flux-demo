@@ -13,15 +13,17 @@ export default {
             id: "1",
             date: "2020-09-18",
             userId: "1",
-            items: [
+            records: [
               {
                 id: "1",
-                time: "15:17",
+                startedAt: "15:17",
+                finishedAt: "15:19",
                 name: "Reading the book"
               },
               {
                 id: "2",
-                time: "15:19",
+                startedAt: "15:17",
+                finishedAt: "",
                 name: "Work - retrospective"
               }
             ]

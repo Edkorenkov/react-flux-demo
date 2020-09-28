@@ -9,9 +9,9 @@ function Activities(props) {
             {props.activities.map((activity) => (
               <li key={activity.id} className="list-group-item">
                 <h4>{activity.date}</h4>
-                {activity.items.map((item) => (
+                {activity.records.map((item) => (
                   <p key={item.id}>
-                    {item.time} | {item.name}
+                    {item.startedAt} | {item.name}
                   </p>
                 ))}
               </li>
