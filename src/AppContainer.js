@@ -12,6 +12,7 @@ export default Container.createFunctional(
     activity: {},
     activities: ActivitiesStore.getState(),
 
+    onCreateActivity: ActivitiesActions.createActivity,
     onLoadActivities: ActivitiesActions.loadActivities
   })
 );
