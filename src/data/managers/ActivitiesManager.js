@@ -26,16 +26,16 @@ class ActivitiesManager {
       }, 1000);
     };
   }
-  create() {
+  create(value) {
     return (ok) => {
       setTimeout(() => {
         ok({
           id: "1",
           record: {
             id: "3",
-            startedAt: "16:00",
+            startedAt: `${new Date().getHours()}:${new Date().getMinutes()}`,
             finishedAt: "",
-            name: "Coffee break"
+            name: value
           }
         });
       }, 1000);
