@@ -3,7 +3,7 @@ import Slide from "react-reveal/Fade";
 
 function CreateActivityRecord(props) {
   return (
-    <Slide {...{ bottom: true, when: props.activity.isOpen }}>
+    <Slide {...{ duration: 300, bottom: true, when: props.activity.isOpen }}>
       {props.activity.isOpen && (
         <div className="d-flex align-items-end justify-content-center position-fixed fixed-bottom">
           <div className="card w-100 rounded-0 border-left-0 border-right-0 border-bottom-0">

@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { TransitionGroup } from "react-transition-group";
 import ActivityRecord from "./ActivityRecord";
 import CreateActivityRecord from "./CreateActivityRecord";
 
@@ -13,13 +13,13 @@ function Activities(props) {
               {props.activities.map((activity) => (
                 <div key={activity.id} collapse bottom>
                   <h5 className="text-muted">{activity.date}</h5>
-                  <Fade {...{ bottom: true }}>
+                  <TransitionGroup {...{ enter: true }}>
                     <ul className="list-group">
                       {activity.records.map((record, key) => (
                         <ActivityRecord key={key} record={record} />
                       ))}
                     </ul>
-                  </Fade>
+                  </TransitionGroup>
                 </div>
               ))}
             </div>
